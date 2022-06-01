@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSeedling} from "@fortawesome/free-solid-svg-icons"
-import '../index.css';
+import '../../landing-index.css';
+
 
 function Navbar() {
   const [hovered, setHovered] = useState({
@@ -32,7 +33,7 @@ function Navbar() {
   }
 
   return (
-    <nav id="nav-bar" className="navbar navbar-expand-lg navbar-light">
+    <nav id="nav-bar" className="navbar navbar-expand-lg fixed-top navbar-light">
         <a className="navbar-brand" id="navbar-brand" href="#">
         <FontAwesomeIcon className="fa-icon" icon={faSeedling} />
           FamilyTreet
@@ -49,9 +50,11 @@ function Navbar() {
                 <a className="nav-link" href="#">Contact Us</a>
                 </li>
                 <li id="nav-item-three" className="nav-item">
+                {/* Need to add the link href to the spot on the page that has the features
+                i.e. the Features component */}
                 <a className="nav-link" href="#">Features</a>
                 </li>
-            </ul>
+            </ul>          
             <button name="buttonOne" style={{color: hovered.buttonOne ? "#E1DFDD" : "white"}} onMouseOver={hoverOnHandler} onMouseOut={hoverOffHandler} id="btn-home-one" className="btn ml-auto" type="submit">Register</button>
             <button name="buttonTwo" style={{color: hovered.buttonTwo ? "#E1DFDD" : "white"}} onMouseOver={hoverOnHandler} onMouseOut={hoverOffHandler} id="btn-home-two" className="btn" type="submit">Sign In</button>
         </div>

@@ -1,0 +1,111 @@
+input, textarea:focus{
+    border-color: #5b965e;
+}
+span{
+    color: red;
+}
+
+/* Login Section */
+.login-bg{
+   padding-top: 9rem;
+   padding-bottom: 6rem;
+    background-color: #5b965e;
+}
+.login-user-entry{
+    padding-top: 3.25rem;
+    padding-bottom: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: #dcfade;
+    text-align: left;   
+    margin: auto;
+    width: 50%;
+    box-shadow: 1px 1px 3px 2px #464646;
+    color: #363636;
+}
+.login-header{
+    text-align: center;
+    color: #363636;
+}
+.login-entry{
+    margin-bottom: 1.5rem;
+}
+.forgot-password{
+    display: block;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+    font-family: 'Roboto', sans-serif;
+}
+.login-register-section{
+    text-align: center;
+}
+.login-register-link{
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+}
+a.login-register-link{
+    margin-left: .4rem;
+}
+.invalid-msg{
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+/*Register Section */
+
+/*Contact Us Section */
+.contact-us-header{
+    padding-top: 12rem;
+    padding-bottom: 11rem;
+    background-color: #5b965e;
+    color: white;
+}
+.contact {
+    font-family: 'Roboto', sans-serif;
+}
+h1.contact{
+    font-size: 4rem;
+}
+p.contact{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+}
+.user-entry-section{
+    padding-top: 5rem;
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+    text-align: left;
+    color: white;
+}
+.entry{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+}
+.contact-us-btn{
+    background-color: #5b965e;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+    font-size: 1.1rem;
+}
+.confirm-msg{
+    font-family: 'Raleway', sans-serif;
+    font-weight:500;
+    font-size: 1.1rem;
+}
+/* Forgot Password & Reset Password Section */
+.fp-input{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1rem;
+}
+.fp-subheading{
+    color: #363636;
+    font-family: 'Raleway', sans-serif;
+    padding-top: .5rem;
+}
+.confirm-msg{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color:#1f4126;
+}

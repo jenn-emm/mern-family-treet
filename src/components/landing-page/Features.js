@@ -1,5 +1,5 @@
 import React from 'react'
-import BakingFood from "../baking-food-resized.jpg"
+import BakingFood from "../../images/baking-food-resized.jpg"
 
 
 function Features() {
