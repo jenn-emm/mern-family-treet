@@ -20,9 +20,9 @@ function App() {
       {/* <Register /> */}
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}
-      {/* <UserHomePage /> */}
+      <UserHomePage />
       {/* <AddEditRecipe /> */}
-      <ViewRecipe />
+      {/* <ViewRecipe /> */}
       
     </div>
   );

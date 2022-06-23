@@ -37,31 +37,31 @@ const RecipeDashboard= React.forwardRef((props, ref) => {
 
                     <div className="col-lg-6 recipe-dashboard-optional">
                         <div className="form-group row g-0">
-                            <label style={{verticalAlign:"middle", fontWeight:"bold"}} className="form-label col-lg-3">Prep Time</label>
+                            <label className="recipe-dashboard-label form-label col-lg-3">Prep Time</label>
                             <div className="col-lg-7">
                                 <p>{testRecipe.prepTime}</p>
                             </div>
                         </div> 
                         <div className="form-group row g-0">
-                            <label style={{verticalAlign:"middle", fontWeight:"bold"}} className="form-label col-lg-3">Cook Time</label>
+                            <label className="recipe-dashboard-label form-label col-lg-3">Cook Time</label>
                             <div className="col-lg-7">
                                 <p>{testRecipe.cookTime}</p>
                             </div>
                         </div>  
                         <div className="form-group row g-0">
-                            <label style={{verticalAlign:"middle", fontWeight:"bold"}} className="form-label col-lg-3">Servings</label>
+                            <label className="recipe-dashboard-label form-label col-lg-3">Servings</label>
                             <div className="col-lg-7">
                                 <p>{testRecipe.servings}</p>
                             </div>
                         </div>  
                         <div className="form-group row g-0">
-                            <label style={{verticalAlign:"middle", fontWeight:"bold"}} className="form-label col-lg-3">Description</label>
+                            <label className="recipe-dashboard-label form-label col-lg-3">Description</label>
                             <div className="col-lg-7">
                                 <p>{testRecipe.description}</p>
                             </div>
                         </div>
                         <div className="form-group row g-0">
-                            <label style={{verticalAlign:"middle", fontWeight:"bold"}} className="form-label col-lg-3">Category</label>
+                            <label className="recipe-dashboard-label form-label col-lg-3">Category</label>
                             <div className="col-lg-7">
                                 <p>{testRecipe.category}</p>
                             </div>
@@ -69,20 +69,20 @@ const RecipeDashboard= React.forwardRef((props, ref) => {
                     </div>
                 </div>
 
-                <div style={{paddingTop:"2rem"}} className="row">
+                <div className="recipe-db-ingredients-directions-section row">
                     <div id="ingredients-section" className="col-lg-5">
-                        <h5 style={{marginBottom:"1.5rem"}}>Ingredients</h5>
+                        <h5 className="recipe-db-ingredients-directions-header">Ingredients</h5>
                         <ul>
                         {testRecipe.ingredients.map((ingredient, index)=>{
-                            return(<li key={index} style={{listStyleType:"initial", paddingBottom:".75rem"}}>{ingredient}</li>)
+                            return(<li key={index} className="db-ingredients-list-item">{ingredient}</li>)
                         })}
                         </ul>  
                     </div>
                     <div className="col-lg-7">
-                        <h5 style={{marginBottom:"1.5rem"}}>Directions</h5>
+                        <h5 className="recipe-db-ingredients-directions-header">Directions</h5>
                         <ol>
                         {testRecipe.directions.map((direction, index) =>{
-                            return(<li key={index} style={{paddingLeft:"1rem",paddingBottom:".75rem"}}>{direction}</li>)
+                            return(<li key={index} className="db-directions-list-item">{direction}</li>)
                         })}    
                         </ol>
                     </div>

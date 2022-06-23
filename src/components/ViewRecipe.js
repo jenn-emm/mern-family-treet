@@ -1,8 +1,8 @@
-import React from 'react'
-import UserNavbar from './user-pages/UserNavbar'
-import SideNav from './user-pages/SideNav'
-import Copyright from './multi-use/Copyright'
-import ViewDashboard from './user-pages/ViewDashboard'
+import React from "react"
+import UserNavbar from "./user-pages/UserNavbar"
+import SideNav from "./user-pages/SideNav"
+import Copyright from "./multi-use/Copyright"
+import ViewDashboard from "./user-pages/ViewDashboard"
 
 
 const ViewRecipe = () => {
@@ -10,7 +10,7 @@ const ViewRecipe = () => {
   return (
     <div>
         <UserNavbar />
-        <div className='row'>
+        <div className="row">
             <SideNav />
             <ViewDashboard/>
         </div>

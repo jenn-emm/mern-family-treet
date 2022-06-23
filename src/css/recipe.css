@@ -97,6 +97,16 @@
 .recipe-dashboard-optional{
     margin-left: 6rem;
 }
+.recipe-dashboard-label{
+    vertical-align: middle;
+    font-weight: bold;
+}
+.recipe-db-ingredients-directions-section{
+    padding-top: 2rem;
+}
+.recipe-db-ingredients-directions-header{
+    margin-bottom: 1.5rem;
+}
 ol li::marker {
     color: #2c602c;
     font-weight: bold;
@@ -104,6 +114,14 @@ ol li::marker {
 ul li::marker {
     color: #2c602c;
     font-weight: bold;
+}
+.db-ingredients-list-item{
+    list-style-type: initial;
+    padding-bottom: .75rem;
+}
+.db-directions-list-item{
+    padding-left: 1rem;
+    padding-bottom: .75rem;
 }
 
 
