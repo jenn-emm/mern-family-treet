@@ -1,7 +1,7 @@
-import React from 'react'
-import LoginUserEntry from './login-register/LoginUserEntry'
-import Copyright from './multi-use/Copyright'
-import Navbar from './multi-use/Navbar'
+import React from "react"
+import LoginUserEntry from "./login-register/LoginUserEntry"
+import Copyright from "./multi-use/Copyright"
+import Navbar from "./multi-use/Navbar"
 
 function Login() {
   return (

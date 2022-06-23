@@ -1,61 +1,44 @@
-import React, {useState} from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faSeedling} from "@fortawesome/free-solid-svg-icons"
-import '../../landing-index.css';
+import React, {useState} from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faSeedling, faHome, faGear, faCircleUser, faSearch} from "@fortawesome/free-solid-svg-icons"
 
 function UserNavbar() {
-    const [hovered, setHovered] = useState({
-        buttonOne: false,
-        buttonTwo: false
-      })
-    
-      const hoverOnHandler = (event) =>{
-        const {name} = event.target
-        setHovered((prevValue) =>{
-          return {
-            ...prevValue,
-            [name]: true
-          }
-    
-        })
-      }
-    
-      const hoverOffHandler = (event) =>{
-        const {name} = event.target
-        setHovered((prevValue) =>{
-          return {
-            ...prevValue,
-            [name]: false
-          }
-    
-        })
-      }
     
       return (
         <nav id="nav-bar" className="navbar navbar-expand-lg fixed-top navbar-light">
-            <a className="navbar-brand" id="navbar-brand" href="#">
-            <FontAwesomeIcon className="fa-icon" icon={faSeedling} />
-              FamilyTreet
-            </a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a className="navbar-brand"><FontAwesomeIcon className="fa-icon icon-user-nav" icon={faSeedling} /></a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#userNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav m-auto">
-                    <li id="nav-item-one" className="nav-item">
-                    <a className="nav-link" href="#">Home</a>
-                    </li>
-                    <li id="nav-item-two" className="nav-item">
-                    <a className="nav-link" href="#">Contact Us</a>
-                    </li>
-                    <li id="nav-item-three" className="nav-item">
-                    {/* Need to add the link href to the spot on the page that has the features
-                    i.e. the Features component */}
-                    <a className="nav-link" href="#">Features</a>
-                    </li>
-                </ul>          
-                <button name="buttonOne" style={{color: hovered.buttonOne ? "#E1DFDD" : "white"}} onMouseOver={hoverOnHandler} onMouseOut={hoverOffHandler} id="btn-home-one" className="btn ml-auto" type="submit">Register</button>
-                <button name="buttonTwo" style={{color: hovered.buttonTwo ? "#E1DFDD" : "white"}} onMouseOver={hoverOnHandler} onMouseOut={hoverOffHandler} id="btn-home-two" className="btn" type="submit">Sign In</button>
+
+            <div className="collapse navbar-collapse" id="userNavbar">
+                
+                <div className="navbar-nav ms-auto">
+                    <form className="form-inline my-2 my-lg-0">
+                        <input id="user-search-bar" className="form-control mr-sm-2" type="search" placeholder="Find a Recipe" aria-label="Search"></input>
+                        <button id="user-search-btn" className="btn btn-outline-success" type="submit">
+                        <FontAwesomeIcon icon={faSearch} />
+                        </button>
+                    </form>
+                <a href="#">
+                            <FontAwesomeIcon className="nav-link" icon={faHome} />
+                        </a>
+               
+                <a href="#">
+                    <FontAwesomeIcon className="fa-icon nav-link" icon={faGear} />
+                </a>
+                
+                <div class="btn-group dropstart">
+                    <button className="user-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <FontAwesomeIcon icon={faCircleUser} />
+                    </button>
+                    <ul class="dropdown-menu">
+                        <a class="dropdown-item" href="#">User Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Logout</a>
+                    </ul>
+                </div>
+                </div>
             </div>
         </nav>
       )

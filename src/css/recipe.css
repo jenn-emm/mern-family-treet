@@ -1,0 +1,129 @@
+/* Add/Edit Recipe Dashboard Section */
+
+.add-edit-dashboard-section{
+    text-align: left;
+}
+.add-edit-form{
+    padding-left: 3rem;
+}
+.recipe-name-section{
+    margin-top: 2rem;
+}
+.recipe-name-form{
+    padding-bottom: 3rem;
+}
+.recipe-img-text{
+    color: #272727;
+}
+.recipe-upload-img{
+    padding-top: 1.5rem;
+    max-width: 18.75rem;
+}
+.recipe-optional-section{
+    margin-left: 6rem;
+}
+.recipe-optional-header{
+    margin-bottom: 1.5rem;
+}
+.optional-section-label{
+    vertical-align: middle;
+}
+.optional-section-input{
+    margin-bottom: 1rem;
+}
+.ingredients-section{
+    padding-top: 2rem;
+}
+.ingredients-directions-section-header{
+    margin-bottom:1.5rem;
+}
+.recipe-ingredient-input{
+    width: fit-content;
+    display: inline;
+}
+.recipe-ingredient-directions-btn{
+    vertical-align: top;
+    margin-left: .25rem;
+}
+.recipe-directions-textarea{
+    width: 85%;
+    display: inline;
+}
+.add-edit-recipe-submit-section{
+    text-align: right;
+    padding-right: 5rem;
+}
+.add-edit-recipe-submit-btn{
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+/* Recipe/View Dashboard Section */
+.view-dashboard-print-section{
+    text-align: right;
+}
+#print-btn{
+    padding-right: 1.75rem;
+    font-size: 1.25rem;
+    font-size: 1.25rem;
+    color:#292929;
+    border: none;
+    text-align: right;
+    background: none;
+}
+#favorite-btn{
+    padding-right: .5rem;
+    font-size: 1.25rem;
+    color:#292929;
+    border: none;
+    text-align: right;
+    background: none;
+}
+.recipe-dashboard-section{
+    text-align: left;
+}
+.recipe-dashboard-form{
+    padding-left: 3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+.view-recipe-img{
+    padding-top: 1rem;
+    max-width: 18.75rem;
+}
+.recipe-dashboard-optional{
+    margin-left: 6rem;
+}
+ol li::marker {
+    color: #2c602c;
+    font-weight: bold;
+}
+ul li::marker {
+    color: #2c602c;
+    font-weight: bold;
+}
+
+
+/* View Recipe Dashboard Section - FOR PRINTING */
+@media print {
+    /* div{
+        page-break-inside: avoid;
+    } */
+    /* div {
+        page-break-inside: avoid;
+      } */
+    .optional-section{
+        margin-left: 0 !important;
+        margin-top: 2rem;
+    }
+    
+    img{
+        display: none;
+    }
+    button{
+        display: none!important;
+    }
+}

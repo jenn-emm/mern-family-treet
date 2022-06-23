@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import Button from '../multi-use/LightButton'
+import React, {useState} from "react"
+import Button from "../multi-use/LightButton"
 
 function LoginUserEntry() {
 const [userLogin, setUserLogin] = useState({
@@ -32,31 +32,35 @@ const submitHandler = (event) => {
 
 }
   return (
-    <div className='login-bg'>
-    <div className='container'>
-  <form onSubmit={submitHandler} className='login-user-entry'>
-    <h1 className="login-header">Login</h1>
+    <div className="login-register-password-bg">
+      <div className="container">
+        <form onSubmit={submitHandler} className="login-register-password-user-entry">
+          <h1 className="login-register-password-header">Login</h1>
     
-      <div className="form-group email-section">
-        <label className='entry login-label'>Email Address</label>
-        <input type="email" onChange={changeHandler} name="email" value={userLogin.email} className="form-control entry login-entry" placeholder="name@example.com" />   
+          <div className="form-group">
+            <label className="entry">Email Address</label>
+            <input type="email" onChange={changeHandler} name="email" value={userLogin.email} className="form-control entry login-register-entry" placeholder="name@example.com" />   
+          </div>
+
+          <div className="form-group">
+            <label className="entry">Password</label>
+            <input type="password" onChange={changeHandler} name="password" value={userLogin.password} className="form-control entry login-register-entry" placeholder="Password" />
+            {isInvalid && <p className="invalid-msg">Please enter a valid email & password</p>}
+          </div>
+
+          <Button label="Log In" />
+          {/* Here you will need to link to the Forgot Password page */}
+          <a className="login-forgot-password">Forgot Password</a>
+
+          <div className="login-register-section">
+            <p className="login-register-link">Don't have an account?</p>
+            {/* Here you will need to link to the Register page */}
+            <a className="login-register-link">Sign Up</a> 
+          </div>
+          
+        </form>
       </div>
-      <div className="form-group password-section">
-        <label className="entry login-label">Password</label>
-        <input type="password" onChange={changeHandler} name="password" value={userLogin.password} className="form-control entry login-entry" placeholder="Password" />
-        {isInvalid && <p className="invalid-msg">Please enter a valid email & password</p>}
-      </div>
-    <Button label="Log In" />
-    {/* Here you will need to link to the Forgot Password page */}
-    <a className="forgot-password">Forgot Password</a>
-    <div className='login-register-section'>
-    <p className="login-register-link">Don't have an account?</p>
-    {/* Here you will need to link to the Register page */}
-    <a className="login-register-link">Sign Up</a> 
     </div>
-  </form>
-  </div>
-  </div>
   )
 }
 

@@ -1,0 +1,105 @@
+/* Dashboard Header Section */
+.user-greeting{
+  text-align: left;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  color:#464646;
+  display: inline;
+  padding-right: 1rem;
+}
+
+.dashboard-card-section{
+  margin-top: 2.5rem;
+}
+
+/* Family Card Section */
+
+.family-member-card{
+  padding-top: 0;
+}
+.family-member-title{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color:#464646;
+  padding-bottom: .30rem;
+}
+.fam-list{
+  text-align: left;
+  padding-left: 5rem;
+  color: #2c602c;
+}
+.family-member{
+  padding-bottom: .75rem;
+}
+
+/* Recipe Card Section */
+
+.recipe-card-title{
+  color:#464646;
+  padding-bottom: .75rem;
+}
+a.card-text{
+  color: #2c602c;
+}
+a.card-text:hover{
+  color: #9cb59c;
+}
+.recipe-item{
+  padding-bottom: .75rem;
+}
+.recipe-card-text{
+  padding-left: 6rem;
+}
+.fam-recipe-list{
+  text-align: left;
+}
+
+/* Both Family & Recipe Card Section */
+.user-main-card{
+  border-radius: 10%;
+  width: fit-content;
+}
+ul{
+  list-style-type:none;
+}
+
+/* User Navbar Section */
+
+.side-user-navbar{ 
+  margin-top: 3.25rem;
+}
+.dropdown-item:hover{
+  background-image: linear-gradient(to right, #f3f1f1, #fefafa , #fcfafa, #ffff);
+} 
+#user-search-btn{
+    display: inline;
+    vertical-align: top;
+    color:rgba(115,115,115,255);
+    border-color: #ced4da;
+}
+#user-search-btn:hover{
+      background-color: #f3f1f1;
+      color:#727272;
+}
+#user-search-bar{
+      display: inline;
+      width: fit-content;
+}
+  
+  .user-btn{
+    background-color: #ffff;
+    border: none;
+    color: #727272;
+    font-size: 1.6rem;
+    }
+    .user-btn:hover{
+      color:#545454;
+    }
+
+.icon-user-nav{
+    font-size: 1.7rem;
+}
+
+
+

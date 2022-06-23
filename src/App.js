@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import LandingPage from './components/LandingPage';
 import ContactUs from './components/ContactUs';
@@ -7,6 +7,9 @@ import Register from './components/Register';
 import ForgotPassword from './components/ForgotPassword';
 import ResetPassword from './components/ResetPassword';
 import UserHomePage from './components/UserHomePage';
+import AddEditRecipe from './components/AddEditRecipe';
+import ViewRecipe from './components/ViewRecipe';
+
 
 function App() {
   return (
@@ -17,7 +20,10 @@ function App() {
       {/* <Register /> */}
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}
-      <UserHomePage />
+      {/* <UserHomePage /> */}
+      {/* <AddEditRecipe /> */}
+      <ViewRecipe />
+      
     </div>
   );
 }
