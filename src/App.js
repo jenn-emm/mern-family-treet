@@ -9,6 +9,7 @@ import ResetPassword from './components/ResetPassword';
 import UserHomePage from './components/UserHomePage';
 import AddEditRecipe from './components/AddEditRecipe';
 import ViewRecipe from './components/ViewRecipe';
+import SideNav from './components/user-pages/SideNav';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <UserHomePage />
       {/* <AddEditRecipe /> */}
       {/* <ViewRecipe /> */}
+     
       
     </div>
   );
