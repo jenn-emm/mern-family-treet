@@ -10,9 +10,11 @@ const ViewRecipe = () => {
   return (
     <div>
         <UserNavbar />
-        <div className="row">
-            <SideNav />
-            <ViewDashboard/>
+        <div className="container-fluid">
+          <div className="row">
+              <SideNav />
+              <ViewDashboard/>
+          </div>
         </div>
         <Copyright />
     </div>

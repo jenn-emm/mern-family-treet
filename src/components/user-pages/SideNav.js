@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, {useState} from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPeopleGroup, faStar, faSliders, faAdd, faSort, faArrowDownAZ, faArrowUpZA, faClockRotateLeft, faUsers, faUserPen, faPersonCirclePlus, faPeopleArrowsLeftRight} from "@fortawesome/free-solid-svg-icons"
 
 
@@ -32,8 +32,8 @@ function SideNav() {
         })
     }
   return (
-    <div className='col-lg-2' style={{backgroundColor:"white", paddingTop:"4.75rem"}}>
-    <ul className='side-nav-list'>
+    <div className="col-lg-2" style={{backgroundColor:"white", paddingTop:"4.75rem"}}>
+    <ul className="side-nav-list">
         <li>
              <a name="favorites" value={isHovered.favorites} 
              onMouseEnter={hoverOnHandler} onMouseLeave={hoverOffHandler} 

@@ -47,18 +47,19 @@
 /* Intro Section */
 
 div .intro-home{
-  padding-top: 7.25rem;
+  padding-top: 9.25rem;
   padding-bottom: 10rem;
 }
 .company-name{
   font-family: 'Roboto', sans-serif;
   color: white;
-  font-size: 5.75rem;
+  font-size: 6rem;
   padding-top: 2rem;
 }
 
 .intro-subheading{
   font-family: 'Roboto', sans-serif;
   color: white;
-  font-size: 2.7rem; 
+  font-size: 2.8rem; 
+  padding-top: 1rem;
 }

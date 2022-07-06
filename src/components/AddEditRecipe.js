@@ -8,9 +8,11 @@ function AddEditRecipe() {
   return (
     <div>
         <UserNavbar />
-        <div className="row">
-            <SideNav />
-            <EditDashboard />
+        <div className="container-fluid">
+          <div className="row">
+              <SideNav />
+              <EditDashboard />
+          </div>
         </div>
         <Copyright />
     </div>

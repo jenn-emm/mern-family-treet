@@ -10,6 +10,8 @@ import UserHomePage from './components/UserHomePage';
 import AddEditRecipe from './components/AddEditRecipe';
 import ViewRecipe from './components/ViewRecipe';
 import SideNav from './components/user-pages/SideNav';
+import Settings from './components/Settings';
+import ChangeFamProfView from './components/ChangeFamProfView';
 
 
 function App() {
@@ -21,10 +23,11 @@ function App() {
       {/* <Register /> */}
       {/* <ForgotPassword /> */}
       {/* <ResetPassword /> */}
-      <UserHomePage />
+      {/* <UserHomePage /> */}
       {/* <AddEditRecipe /> */}
       {/* <ViewRecipe /> */}
-     
+      {/* <Settings /> */}
+      <ChangeFamProfView />
       
     </div>
   );

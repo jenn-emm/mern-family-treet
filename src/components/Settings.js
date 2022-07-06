@@ -1,19 +1,17 @@
 import React from "react"
-import Copyright from "./multi-use/Copyright"
 import UserNavbar from "./user-pages/UserNavbar"
 import SideNav from "./user-pages/SideNav"
-import UserDashboard from "./user-pages/UserDashboard"
+import Copyright from "./multi-use/Copyright"
+import SettingsDashboard from "./settings-pages/SettingsDashboard"
 
-
-
-function UserHomePage() {
+function Settings() {
   return (
     <div>
     <UserNavbar />
     <div className="container-fluid">
       <div className="row">
           <SideNav />
-          <UserDashboard />
+          <SettingsDashboard />
       </div>
       </div>
     <Copyright />
@@ -21,4 +19,4 @@ function UserHomePage() {
   )
 }
 
-export default UserHomePage
+export default Settings
