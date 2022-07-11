@@ -11,7 +11,6 @@ import AddEditRecipe from './components/AddEditRecipe';
 import ViewRecipe from './components/ViewRecipe';
 import SideNav from './components/user-pages/SideNav';
 import Settings from './components/Settings';
-import ChangeFamProfView from './components/ChangeFamProfView';
 
 
 function App() {
@@ -26,8 +25,7 @@ function App() {
       {/* <UserHomePage /> */}
       {/* <AddEditRecipe /> */}
       {/* <ViewRecipe /> */}
-      {/* <Settings /> */}
-      <ChangeFamProfView />
+      <Settings />
       
     </div>
   );

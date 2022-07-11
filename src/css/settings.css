@@ -36,3 +36,51 @@ padding-top: 3rem;
 .change-fp-settings-link{
     padding-top: 3rem;
 }
+.change-fp-list-item{
+margin-bottom: .5rem;
+}
+.change-fp-btn{
+    margin-top: 1rem;
+}
+.change-fp-label{
+    margin-right: .5rem;
+}
+
+/* Modal Section */
+.modal-bg{
+width: 100vw;
+height: 100wh;
+background-color: rgba(236, 247, 236, 0.6);
+position:fixed;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1;
+padding-top: 2rem;
+}
+.modal-container{
+width: 31.25rem;
+border-radius: 12px;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 1.563rem;
+margin-right: 19rem;
+}
+.close-modal-btn{
+background-color: transparent;
+color:#8b8b8b;
+border: none;
+display: flex;
+justify-content: flex-end;
+}
+.modal-title{
+display: inline-block;
+text-align: center;
+padding-bottom: .75rem;
+}
+.modal-btn-section{
+padding-bottom: .75rem;
+}
+.modal-submit-btn{
+    margin-left: .5rem;
+}

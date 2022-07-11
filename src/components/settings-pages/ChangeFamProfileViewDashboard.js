@@ -29,7 +29,7 @@ const mockUserProfile=[
       and when one other family profile is selected, then the currentView property
       changes to that view. And then on the home page we need to render the items in THAT family profile.*/}
 
-function FamProfileViewDashboard() {
+function FamProfileViewDashboard({closeModal}){
 
   const [currentFamProfile, setCurrentFamProfile] = useState(mockUserProfile)
   
@@ -37,11 +37,13 @@ function FamProfileViewDashboard() {
     const {value} = event.target
 
     const famProfileList = [...currentFamProfile]
+
+    famProfileList.forEach((profile)=>{
+      profile.isDefault = false
+        
+    }) 
     
-    if(famProfileList[index].isDefault === true){
-      famProfileList[index].isDefault = false
-    }
-    else if(famProfileList[index].isDefault === false){
+    if(famProfileList[index].isDefault === false){
       famProfileList[index].isDefault = true
     }
         setCurrentFamProfile(famProfileList)
@@ -50,29 +52,37 @@ function FamProfileViewDashboard() {
   
   const submitHandler = (event) =>{
     event.preventDefault()
-    //Here we could do some sort of search in the database to find the profile with the same
-    //name as the name const and replace with true?
-    //we would still also need to find the one that is currently true and change it to false.
+    //Here we could do some sort of search in the database to push the updated user profile to that 
+    //database with the correct is default property. We also need to double check that if we exit out
+    //of the modal prior to clicking the submit btn (once the db is set up), then we should
+    //still have the same original default fam profile and not one selected.
     console.log(currentFamProfile)
+    closeModal()
   }
 
   return (
-    <div className="col-lg-10 user-dashboard">
-    <SettingsHeader title="Change Family Profile View"/>
-    <hr></hr>
-    <div className="container-fluid">
-      <div className="row">
-      <form>
-        {currentFamProfile.map((famProfile, index) =>{
-          return (<div key={index} className="col-lg-12">
-          <input onChange={(event) => changeHandler(event, index)} checked={famProfile.isDefault} value={famProfile.isDefault} name={famProfile.familyName} type="checkbox"></input>
-          <label>{famProfile.familyName}</label>
-        </div>)
-        })}
-        <button onClick={submitHandler} type="submit">Submit</button>
-        </form>
-      </div> 
-    </div>
+    <div>
+      <div className="close-modal-btn" >
+        <button className="close-modal-btn" onClick={() => closeModal()}> X </button>
+      </div>
+      <h2 className="modal-title">Change Family Profile View</h2>
+    
+      <div className="container-fluid">
+        <div className="row">
+        <form>
+          {currentFamProfile.map((famProfile, index) =>{
+            return (<div key={index} className="change-fp-list-item col-lg-12">
+            <input className="change-fp-label" onChange={(event) => changeHandler(event, index)} checked={famProfile.isDefault} name="radio-group" type="radio"></input>
+            <label>{famProfile.familyName}</label>
+          </div>)
+          })}
+          <div className="modal-btn-section">
+            <button className="btn btn-danger change-fp-btn" onClick={() => closeModal()}>Cancel</button>
+            <button className="btn btn-success change-fp-btn modal-submit-btn" onClick={submitHandler} type="submit">Submit</button>
+          </div>
+          </form>
+        </div> 
+      </div>
     </div>
   )
 }

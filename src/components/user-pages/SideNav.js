@@ -62,13 +62,14 @@ function SideNav() {
             </div>
         </li>
         <li>
-            <button name="settings" value={isHovered.settings} 
+            <a name="settings" value={isHovered.settings} 
             onMouseEnter={hoverOnHandler} onMouseLeave={hoverOffHandler} 
             style={{backgroundImage: isHovered.settings && "linear-gradient(to right, #f3f1f1, #f6f5f5, #fefafa , #fcfafa, #ffff)"}} id="settings-btn" 
             className="side-nav-btn btn d-inline-flex align-items-center" 
-            data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="false"><FontAwesomeIcon className="fa-icon fa-fw" icon={faSliders} />Settings</button>
+            //data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="false"
+            ><FontAwesomeIcon className="fa-icon fa-fw" icon={faSliders} />Settings</a>
             
-            <div className="collapse" id="settings-collapse">
+            {/* <div className="collapse" id="settings-collapse">
                 <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded"><FontAwesomeIcon className="fa-icon fa-fw" icon={faUsers} />Change Family Profile View</a></li>
                     <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded"><FontAwesomeIcon className="fa-icon fa-fw" icon={faPeopleGroup} />Create New Family Profile</a></li>
@@ -76,7 +77,7 @@ function SideNav() {
                     <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded"><FontAwesomeIcon className="fa-icon fa-fw" icon={faPersonCirclePlus} />Share Family Profile</a></li>
                     <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded"><FontAwesomeIcon className="fa-icon fa-fw" icon={faUserPen} />Edit Your Profile</a></li>
                 </ul>
-            </div>
+            </div> */}
         </li>
     </ul>
 </div>
