@@ -11,7 +11,7 @@ import AddEditRecipe from './components/AddEditRecipe';
 import ViewRecipe from './components/ViewRecipe';
 import SideNav from './components/user-pages/SideNav';
 import Settings from './components/Settings';
-
+import ViewEditUserProfile from "./components/ViewEditUserProfile"
 
 function App() {
   return (
@@ -25,7 +25,8 @@ function App() {
       {/* <UserHomePage /> */}
       {/* <AddEditRecipe /> */}
       {/* <ViewRecipe /> */}
-      <Settings />
+      {/* <Settings /> */}
+      <ViewEditUserProfile />
       
     </div>
   );

@@ -1,3 +1,7 @@
+/* Add/Edit Recipe Dashboard Header */
+.recipe-header{
+    padding-left: 3rem;
+}
 /* Add/Edit Recipe Dashboard Section */
 
 .add-edit-dashboard-section{
@@ -66,12 +70,11 @@
     text-align: right;
 }
 #print-btn{
-    padding-right: 1.75rem;
+    padding-right: .75rem;
     font-size: 1.25rem;
     font-size: 1.25rem;
     color:#292929;
     border: none;
-    text-align: right;
     background: none;
 }
 #favorite-btn{
@@ -79,8 +82,15 @@
     font-size: 1.25rem;
     color:#292929;
     border: none;
-    text-align: right;
     background: none;
+}
+#delete-btn{
+    padding-right: 1.75rem;
+    font-size: 1rem;
+    color:#292929;
+    border: none;
+    background: none;
+    text-align: left;
 }
 .recipe-dashboard-section{
     text-align: left;

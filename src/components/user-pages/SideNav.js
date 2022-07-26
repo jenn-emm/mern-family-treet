@@ -2,6 +2,8 @@ import React, {useState} from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPeopleGroup, faStar, faSliders, faAdd, faSort, faArrowDownAZ, faArrowUpZA, faClockRotateLeft, faUsers, faUserPen, faPersonCirclePlus, faPeopleArrowsLeftRight} from "@fortawesome/free-solid-svg-icons"
 
+//this is the code needed for the add to run on the side nav. need to figure out how to implement this. 
+
 
 function SideNav() {
     const [isHovered, setIsHovered] = useState({
@@ -69,6 +71,16 @@ function SideNav() {
             //data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="false"
             ><FontAwesomeIcon className="fa-icon fa-fw" icon={faSliders} />Settings</a>
             
+            <ins class="adsbygoogle"
+                style={{display:"block"}}
+                data-ad-client="ca-pub-1111847102629342"
+                data-ad-slot="2494200509"
+                data-ad-format="auto"
+                data-full-width-responsive="true"></ins>
+            {<script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script> }
+
             {/* <div className="collapse" id="settings-collapse">
                 <ul className="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                     <li><a href="#" className="link-dark d-inline-flex text-decoration-none rounded"><FontAwesomeIcon className="fa-icon fa-fw" icon={faUsers} />Change Family Profile View</a></li>

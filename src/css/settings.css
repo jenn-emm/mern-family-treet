@@ -48,15 +48,15 @@ margin-bottom: .5rem;
 
 /* Modal Section */
 .modal-bg{
-width: 100vw;
-height: 100wh;
-background-color: rgba(236, 247, 236, 0.6);
+width: 100%;
+background-color: rgba(238, 250, 241, .6);
 position:fixed;
 display: flex;
 justify-content: center;
 align-items: center;
 z-index: 1;
-padding-top: 2rem;
+padding-top: .5rem;
+padding-bottom: 1.5rem;
 }
 .modal-container{
 width: 31.25rem;
@@ -83,4 +83,142 @@ padding-bottom: .75rem;
 }
 .modal-submit-btn{
     margin-left: .5rem;
+}
+.modal-redirect-link{
+    display: block;
+    text-align: right;
+    font-size: .9rem;
+    padding-right: 3.5rem;
+    padding-bottom: 2rem;
+}
+.share-modal-container{
+border-radius: 12px;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+padding: 1.563rem;
+margin-right: 19rem;
+}
+.share-modal-title{
+display: inline-block;
+text-align: center;
+padding-bottom: .75rem;
+padding-left: 2rem;
+padding-right: 2rem;
+}
+.modal-email{
+width: 80%;
+margin: auto;
+}
+.modal-confirm{
+    padding-top: 1rem;
+    color:#2c602c;
+}
+.modal-createFam{
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.create-modal-redirect-link{
+    display: block;
+    margin-top: .75rem;
+    font-size: .9rem;
+    padding-bottom: 2rem;
+}
+/* View & Edit User Profile Section */
+/* .user-profile-card{
+    padding-top: .5rem;
+    padding-left: 1rem;
+    text-align: left;
+} */
+.user-profile-card-header{
+    text-align: left;
+    padding-top: .75rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+}
+.user-profile-card-edit{
+    text-align: right;
+    margin-top: .75rem;
+}
+.user-edit-icon:hover{
+    color: #9cb59c;
+}
+.user-profile-card-link{
+    text-align: right;
+    margin-top: .75rem;
+    text-decoration: underline;
+    font-weight: 300;
+    font-size: .9rem;
+    color:#2c5d37;
+}
+.user-profile-card-link:hover{
+    color:#9cb59c;
+}
+.user-card-section{
+background-color: white;
+border-radius: 1rem;
+margin-top: 3rem;
+}
+.card-item-label{
+color: #8b8b8b;
+font-weight: 300;
+text-align: right;
+}
+.user-name{
+   text-align: left;
+}
+.card-hr{
+    color: #a0a0a0;
+}
+.user-edit-btn{
+    margin-top: .5rem;
+}
+.change-profile-label{
+    text-align: left;
+    padding-top: 1rem;
+}
+.change-user-modal-btn-section{
+    margin-top: 1rem;
+}
+.user-profile-modal-container{
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1.563rem;
+    width: 35%;
+    margin-right: 19rem;
+}
+.pw-success-msg{
+    padding-top: 1rem;
+    color: #2c602c;
+    font-size: 1.25rem;
+}
+/* Forgot PW Modal */
+.forgot-pw-header{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+.forgot-pw-btn{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+.forgot-pw-modal-container{
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1.563rem;
+    width: 35%;
+    margin-right: 19rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.forgot-pw-subheader{
+    text-align: left;
+}
+.forgot-pw-sm{
+    font-weight: 300;
+    color: #8b8b8b;
+    font-size: .8rem;
+    text-align: left;
 }

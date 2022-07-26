@@ -77,7 +77,7 @@ function FamProfileViewDashboard({closeModal}){
           </div>)
           })}
           <div className="modal-btn-section">
-            <button className="btn btn-danger change-fp-btn" onClick={() => closeModal()}>Cancel</button>
+            <button className="btn btn-secondary change-fp-btn" onClick={() => closeModal()}>Cancel</button>
             <button className="btn btn-success change-fp-btn modal-submit-btn" onClick={submitHandler} type="submit">Submit</button>
           </div>
           </form>

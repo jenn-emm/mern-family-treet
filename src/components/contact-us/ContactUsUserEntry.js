@@ -50,7 +50,7 @@ admin interface.*/}
       <div className="col-lg-6 col-md-12">
         <div className="form-group mb-3">
           <label className="entry">Message</label>
-          <textarea onChange={changeHandler} value={userEntry.message} name="message" className="entry form-control mt-1"  rows="4" required></textarea>
+          <textarea onChange={changeHandler} value={userEntry.message} name="message" className="entry form-control mt-1" maxLength={400} rows="4" placeholder="(maximum 400 characters)" required></textarea>
         </div>
         {isSubmitted && <p className="confirm-msg">Thanks! We will reach out to you soon.</p>}
         <LightButton label="Submit" />
